@@ -1,0 +1,23 @@
+
+
+
+<app-game-control
+(seconds)="onIncrement($event)"
+></app-game-control>
+
+<div class="even-odd-container">
+  <div>
+    <h4>ODD NUMBERS</h4>
+    <app-odd *ngFor="let oddNb of oddNumbers" [oddNumber]="oddNb">
+    </app-odd>
+  </div>
+  
+  <div>
+    <h4>EVEN NUMBERS</h4>
+    <app-even *ngFor="let evenNb of evenNumbers" [evenNumber]="evenNb">
+    </app-even>
+  </div>
+
+ 
+</div>
+  

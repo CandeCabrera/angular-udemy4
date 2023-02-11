@@ -1,0 +1,18 @@
+
+    
+    <div class="counter-container" >
+
+        <h1>{{counter}}</h1>
+        <div class="btn-container">
+            <button 
+            class="btn start"
+            (click)="onStart()"
+            [disabled]="gameOn">Start</button>
+            <button 
+            class="btn stop"
+            (click)="onStop()"
+            [disabled]="!gameOn">Stop</button>
+        </div>
+        
+    </div>
+
